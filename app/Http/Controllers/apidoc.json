@@ -1,0 +1,9 @@
+{
+    "name": "AMR多車管理與物料搬送控制系統",
+    "version": "0.0.1",
+    "defaultVersion": "0.0.1",
+    "description": "AMR多車管理與物料搬送控制系統",
+    "title": "AMR多車管理與物料搬送控制系統",
+    "url": "http://localhost:8046",
+    "sampleUrl": "http://localhost:8046"
+}

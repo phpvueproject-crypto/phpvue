@@ -1,0 +1,318 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+// Variables
+@import "variables";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap.scss";
+@import "~font-awesome/css/font-awesome.min";
+@import "~cxlt-vue2-toastr/dist/css/cxlt-vue2-toastr";
+@import "~font-awesome/scss/font-awesome";
+@import "~admin-lte/dist/css/AdminLTE.min";
+@import "~admin-lte/dist/css/skins/skin-green-light.css";
+@import "~select2/dist/css/select2.min";
+@import "~vue-datetime/dist/vue-datetime";
+@font-face{
+    font-family: NotoSansTC;
+    src:         url('/fonts/NotoSansTC.ttf');
+}
+html{
+    height: 100%;
+}
+body{
+    font-family: "Helvetica", "Arial", NotoSansTC, system-ui, sans-serif;
+    color:       #000000;
+    font-size:   16px;
+}
+.is-danger{
+    color:     red;
+    font-size: 14px;
+}
+.is-hidden{
+    color:     transparent;
+    font-size: 14px;
+}
+td{
+    word-break: break-all
+}
+hr{
+    margin: 0;
+}
+.red{
+    color: red;
+}
+.green{
+    color: green;
+}
+.blue{
+    color: #1F3EFF;
+}
+.tr-gray{
+    background-color: #f5f5f5;
+}
+.loading{
+    margin-top: 10px;
+}
+.login-page{
+    background-size:   cover;
+    background-repeat: no-repeat;
+}
+.content-header{
+    font-size:      16pt;
+    font-weight:    bold;
+    padding-bottom: 15px;
+    color:          white;
+    h1{
+        font-size:   16pt;
+        font-weight: bold;
+        font-family: NotoSansTC, system-ui;
+    }
+}
+.skin-green-light .content-header{
+    background-color: #909090;
+}
+/* custom scroll bar width START */
+::-webkit-scrollbar{
+    width:  12px;
+    height: 12px;
+}
+/* Track */
+::-webkit-scrollbar-track{
+    background:    white;
+    border-radius: 15px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb{
+    background:    lightgray;
+    border-radius: 15px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover{
+    background: gray;
+}
+/* custom scroll bar width END */
+.btn{
+    outline: none !important;
+}
+.btn-delete{
+    background-color: #DB736A;
+    color:            white;
+    font-weight:      bold;
+}
+.btn-delete:hover, .btn-delete:focus{
+    background-color: #C4675F;
+    color:            white;
+}
+.btn-delete-3d{
+    background:  linear-gradient(#CE1F1F, #B21A1A);
+    color:       white;
+    font-weight: bold;
+}
+.btn-delete-3d:hover, .btn-delete-3d:focus{
+    background: linear-gradient(#DB736A, #C4675F);
+    color:      white;
+}
+.btn-default-3d{
+    background:  linear-gradient(#F2F2F2, #EAEAEA);
+    border:      1px solid #EAEAEA;
+    font-weight: bold;
+}
+.btn-default-3d:hover, .btn-default-3d:focus{
+    background: linear-gradient(#F4F4F4, #E7E7E7);
+}
+.op-btn{
+    font-weight:    bold;
+    vertical-align: top;
+    border-radius:  6px;
+    padding:        4px 6px 2px;
+}
+input[type="checkbox"]{
+    accent-color:   #5c9b6c;
+    cursor:         pointer;
+    width:          20px;
+    height:         20px;
+    margin:         5px 0 0;
+    vertical-align: text-bottom;
+}
+option:checked, option:hover{
+    color:      white;
+    background: #5c9b6c;
+}
+.btn-light-green{
+    background-color: #6db880;
+    color:            white;
+}
+.btn-light-green:hover, .btn-light-green:focus{
+    background-color: #5c9b6c;
+    color:            white;
+}
+.btn-light-green-3d{
+    background: linear-gradient(#72C42B, #76BA3A);
+    color:      white;
+}
+.btn-light-green-3d:hover, .btn-light-green-3d:focus{
+    background: linear-gradient(#5C9B6C, #6DB880);
+    color:      white;
+}
+.pagination > .active > a, .pagination > .active > a:focus{
+    background-color: #6db880;
+    border-color:     #6db880;
+}
+.pagination > .active > a:hover{
+    background-color: #5c9b6c;
+    border-color:     #5c9b6c;
+    cursor:           pointer;
+}
+.table-head{
+    background-color: #5c9b6c;
+    color:            white;
+}
+.theme-blue{
+    .select2-container--default .select2-selection--multiple .select2-selection__choice{
+        background-color: #5c9b6c !important;
+        color:            white !important;
+        margin-top:       3px;
+        margin-left:      3px;
+    }
+    .select2-selection__choice__remove:hover{
+        background-color: #6db880 !important;
+        color:            white !important;
+    }
+}
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable{
+    background-color: #5c9b6c;
+}
+.select2-container--default .select2-results__option[aria-selected=true], .select2-container--default .select2-results__option[aria-selected=true]:hover{
+    color: white;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove{
+    color:        white;
+    border-right: 0;
+}
+.select2-container .select2-selection--single{
+    font-size:     12pt;
+    min-height:    32px;
+    border-radius: 0;
+    border:        #D2D6DE solid 1px;
+}
+.select2-container .select2-selection--multiple{
+    font-size:     11pt;
+    min-height:    34px;
+    border-radius: 0;
+    border:        #D2D6DE solid 1px;
+    padding:       2px 6px;
+}
+.select2-container--default .select2-selection--single .select2-selection__clear{
+    line-height: 18px;
+    height:      15px;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow{
+    top: 4px;
+}
+.select2-container .select2-selection--single .select2-selection__rendered{
+    padding-left: 5px;
+    font-size:    10.5pt;
+}
+.select2-container--default .select2-selection--single .select2-selection__placeholder{
+    font-size: 10.5pt;
+    color:     #555555;
+}
+.select2-container--default.select2-container--open{
+    z-index: 1070;
+}
+/* vue-datetime START */
+.theme-light-green .vdatetime-popup__header,
+.theme-light-green .vdatetime-calendar__month__day--selected > span > span,
+.theme-light-green .vdatetime-calendar__month__day--selected:hover > span > span{
+    background: #5c9b6c;
+}
+.theme-light-green .vdatetime-year-picker__item--selected,
+.theme-light-green .vdatetime-time-picker__item--selected,
+.theme-light-green .vdatetime-popup__actions__button{
+    color: #5c9b6c;
+}
+.vdatetime-overlay{
+    z-index: 1030;
+}
+.vdatetime-popup{
+    z-index: 1031;
+}
+/* vue-datetime END */
+.right-menu{
+    .right-menu-item{
+        height:      29px !important;
+        line-height: 29px !important;
+        span{
+            margin-left: 3px;
+            font-size:   13px;
+        }
+    }
+}
+option{
+    background-color: white;
+    color:            black;
+}
+@media screen and (max-width: 1200px){
+    .login-page{
+        background-image: url('/img/login_page_background_image_1280.jpg');
+    }
+}
+@media only screen and (max-width: 768px){
+    .break-table{
+        background-color: transparent !important;
+    }
+    .break-table,
+    .break-table thead,
+    .break-table tbody,
+    .break-table th,
+    .break-table td,
+    .break-table tr{
+        display: block;
+    }
+    .break-table thead tr{
+        position: absolute;
+        top:      -9999px;
+        left:     -9999px;
+    }
+    .break-table thead{
+        display: none;
+    }
+    .break-table tr{
+        border:           1px solid #CCC;
+        margin-bottom:    10px;
+        background-color: #FFFFFF;
+    }
+    .break-table td{
+        border:        none !important;
+        border-bottom: 1px solid #EEE !important;
+        position:      relative;
+        padding-left:  35% !important;
+        white-space:   normal;
+        text-align:    left;
+    }
+    .break-table td:before{
+        position:      absolute;
+        top:           6px;
+        left:          6px;
+        width:         30%;
+        padding-right: 10px;
+        white-space:   nowrap;
+        text-align:    left;
+        font-weight:   bold;
+        color:         #1A1A1A;
+    }
+    .break-table td:before{
+        content: attr(data-title);
+    }
+    .hide-td{
+        display: none !important;
+    }
+    .login-page{
+        background-image: url('/img/login_page_background_image_720.jpg');
+    }
+}
+.table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td{
+    border: 1px solid #9f9f9f !important;
+}
+.centered{
+    vertical-align: middle !important; /* 垂直居中 */
+    text-align:     center; /* 可选：水平居中 */
+}
