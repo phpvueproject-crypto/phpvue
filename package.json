@@ -14,6 +14,7 @@
         "browser-sync-webpack-plugin": "^2.0.1",
         "cross-env": "^5.1",
         "http-proxy-middleware": "^0.19.1",
+        "laravel-echo-server": "^1.6.3",
         "postcss": "^8.1.14",
         "prettier": "^1.19.1",
         "vue-template-compiler": "^2.6.14"
